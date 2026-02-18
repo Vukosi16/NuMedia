@@ -1,6 +1,9 @@
+import Nav from "./Components/Nav"
+
 function App() {
   return (
     <>
+      <Nav />
       <h1>App</h1>
     </>
   )
