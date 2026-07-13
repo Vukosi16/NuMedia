@@ -1,5 +1,6 @@
 import '../styles/home.css'
 import NuMediaStockPhoto from '../assets/NuMediaStockPhoto.png'
+import Footer from '../Components/Footer'
 
 const Home = () => {
   return (
@@ -7,7 +8,13 @@ const Home = () => {
       <div className="Hero">
 
         <div className="heroHeadingContainer">
+          <h3 className="headingTag">DIGITAL AGENCY</h3>
           <h1 className="heroHeading">Create an Online Presence</h1>
+          <p className="heroText">We design, build, and grow websites that turn visitors into clients without the generic template feel. </p>
+          <div className="heroButtonsContainer">
+            <button className="getStartedBtn">Get Started</button>
+            <button className="ViewPortfolioBtn">View Portfolio</button>
+          </div>
         </div>
 
         <div className="heroImageContainer">
@@ -16,7 +23,7 @@ const Home = () => {
 
       </div>
 
-      <div className="about">
+      <div id='aboutSection' className="about">
         
         <div className="about-leftSide">
           <p className="about-leftSide-text-small">Who is NuMedia?</p>
@@ -40,6 +47,8 @@ const Home = () => {
         </div>
         
       </div>
+
+      <Footer />
     </>
   )
 }

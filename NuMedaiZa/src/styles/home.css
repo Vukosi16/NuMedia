@@ -1,59 +1,145 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .Hero{
     width: 100%;
-    height: 110vh;
+    height: 85vh;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    background-color: antiquewhite;
+    flex-direction: row;
+    background: linear-gradient(90deg, 
+    rgba(11,31,58,0.92) 0%,   /* strong navy, left side */
+    rgba(11,31,58,0.75) 45%,  /* still fairly solid, mid */
+    rgba(11,31,58,0.25) 100%  /* mostly transparent, right side */
+    );
+    font-family: Arial, sans-serif;
 }
 
 .heroHeadingContainer{
     font-family: 'Crimson Text', serif;
-    font-size: 3em;
-    font-weight: 700;
-    color: #000;
+    color: white;
     margin: 0;
     padding: 0;
-    height: 35%;
-    width: 60%;
+    height: 100%;
+    width: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    padding-left: 2.5vw;
 }
 
 .heroHeading{
-    padding-top: 20px;
-    color: #000;
+    width: 100%;
+    height: 30%;
+    color: white;
+    font-size: 4em;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', serif;
+
 }
 
-.heroImageContainer{
-    width: 75%;
-    height: 65%;
+.headingTag{
+    color: #C9A961;
+    font-size: 1.7em;
+    font-weight: 700;
+    font-family: Inter ,Arial, sans-serif;
+}
+
+.heroText{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 15%;
+    text-align: left;
     display: flex;
-    justify-content: center;
     align-items: center;
+    font-size: 1.5em;
+}
+
+.heroButtonsContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    height: 13%;
+    align-items: center;
+    padding-left: 20px;
     margin-top: 20px;
 }
 
+.getStartedBtn{
+    width: 40%;
+    height: 80%;
+    background-color: #C9A961;
+    color: #0B1F3A;
+    font-size: 1.2em;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.getStartedBtn:hover{
+    background-color: #A67C3D;
+    border-radius: 10px;
+    padding: 14px;
+    color: white;
+}
+
+.ViewPortfolioBtn{
+    width: 40%;
+    height: 80%;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 700;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.ViewPortfolioBtn:hover{
+    background-color: white;
+    color: #0B1F3A;
+    border-radius: 10px;
+    padding: 14px;
+}
+
+.heroImageContainer{
+    display: flex;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .heroImage{
-    width: 100%;
-    height: 95%;
+    width: 80%;
+    height: 75%;
     object-fit: cover;
     border-radius: 10px;
 }
 
 .about{
     width: 100%;
-    height: 85vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: row;
-    background-color: green;
-    color: #000;
+    color: white;
+    background: linear-gradient(90deg, 
+    rgba(11,31,58,0.92) 0%,   /* strong navy, left side */
+    rgba(11,31,58,0.75) 45%,  /* still fairly solid, mid */
+    rgba(11,31,58,0.25) 100%  /* mostly transparent, right side */
+    );
 }
 
 .about-leftSide{
+    padding-left: 20px;
     width: 50%;
     height: 100%;
     display: flex;
@@ -62,6 +148,7 @@
 }
 
 .about-rightSide{
+    padding-right: 30px;
     width: 50%;
     height: 100%;
     display: flex;
@@ -71,27 +158,29 @@
 
 .about-grid {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 15px;
     width: 90%;
-    height: 80%;
+    height: 65%;
+    padding-top: 70px;
 }
 
 .about-grid-item {
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(201, 169, 97, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .about-grid-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 12px rgba(201, 169, 97, 0.5);
 }
 
 p{
-    padding-left: 15px;
+    padding-left: 20px;
     padding-right: 15px;
     margin-bottom: 0;
     font-size: 1.2em;
@@ -102,7 +191,7 @@ p{
     font-size: 6em;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
-    color: #000;
+    color: #C9A961;
     margin: 0;
     padding-left: 15px;
     padding-right: 15px;
