@@ -1,12 +1,13 @@
 import React from 'react'
-
+import {Link} from 'react-router'
+  
 const CentreNav = () => {
   return (
     <div className='centreNavBox'>
-        <a className='CentreNavLinks'>Online Presence</a>
+        <Link className='CentreNavLinks' to="/online-presence">Online Presence</Link>
         <a className='CentreNavLinks' href="#aboutSection">About NuMedia</a>
-        <a className='CentreNavLinks'>Portfolio</a>
-        <a className='CentreNavLinks'>Contact Us</a>
+        <Link className='CentreNavLinks' to="/portfolio">Portfolio</Link>
+        <Link className='CentreNavLinks' to="/contact">Contact Us</Link>
     </div>
   )
 }
