@@ -1,18 +1,17 @@
 import "./styles/home.css"
-import Home from "./pages/Home"
-import Nav from "./Components/Nav"
-import Layout from "./Components/Layout"
 import { Route, Routes } from "react-router"
+import Home from "./pages/Home"
+import Layout from "./Components/Layout"
+import OnlinePresence from "./pages/OnlinePresence"
 
 function App() {
   return (
-    <>
     <Routes>
-      <Route path="/" element={<Layout />}/>
-      <Route index element={<Home />} />
-        
+      <Route element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/online-presence" element={<OnlinePresence />} />
+      </Route>
     </Routes>
-    </>
   )
 }
 

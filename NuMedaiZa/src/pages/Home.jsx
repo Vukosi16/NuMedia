@@ -1,13 +1,9 @@
 import '../styles/home.css'
 import NuMediaStockPhoto from '../assets/NuMediaStockPhoto.png'
-import Nav from '../Components/Nav'
-import Footer from '../Components/Footer'
 
 const Home = () => {
   return (
     <>
-      <Nav />
-
       <div className="Hero">
 
         <div className="heroHeadingContainer">
@@ -51,7 +47,6 @@ const Home = () => {
         
       </div>
 
-      <Footer />
     </>
   )
 }

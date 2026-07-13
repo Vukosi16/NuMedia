@@ -1,0 +1,108 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.articlePage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 250vh;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    padding-top: 5vh;
+    background: linear-gradient(90deg, 
+        rgba(11,31,58,0.92) 0%,   /* strong navy, left side */
+        rgba(11,31,58,0.75) 45%,  /* still fairly solid, mid */
+        rgba(11,31,58,0.25) 100%  /* mostly transparent, right side */
+    );
+    color: whitesmoke;
+}
+
+.articleContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 90%;
+    padding: 20px;
+}
+
+.articleHeading {
+  color: #C9A961;
+  width: 50%;
+  height: 10%;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.65em;
+}
+
+.articleTag{
+    font-size: 0.65em;
+    color: #cacaca;
+    margin-top: 15px;
+}
+
+.textPortion1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 70%;
+    padding-top: 20px;
+    font-size: 0.9em;
+}
+
+.slogan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 10vh;
+    font-size: 1.2em;
+    font-style: italic;
+    color: #C9A961;
+}
+
+.ctaContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 20vh;
+    background-color: #0B1F3A;
+    color: white;
+    margin-top: 50px;
+}
+
+.ctaHeading{
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 40%;
+    background-color: #C9A961;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cta:hover{
+    background-color: #A67C3D;
+    border-radius: 10px;
+    padding: 14px;
+    color: white;
+}

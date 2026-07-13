@@ -132,10 +132,10 @@ html{
     flex-direction: row;
     color: white;
     background: linear-gradient(90deg, 
-    rgba(11,31,58,0.92) 0%,   /* strong navy, left side */
-    rgba(11,31,58,0.75) 45%,  /* still fairly solid, mid */
-    rgba(11,31,58,0.25) 100%  /* mostly transparent, right side */
-    );
+  rgba(11,31,58,0.92) 0%,   /* strong navy, left side */
+  rgba(11,31,58,0.75) 45%,  /* still fairly solid, mid */
+  rgba(11,31,58,0.25) 100%  /* mostly transparent, right side */
+);
 }
 
 .about-leftSide{
