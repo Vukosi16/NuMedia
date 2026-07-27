@@ -19,7 +19,9 @@ const Home = () => {
           <p className="heroText">We design, build, and grow websites that turn visitors into clients without the generic template feel. </p>
           <div className="heroButtonsContainer">
             <button className="getStartedBtn">Get Started</button>
-            <button className="ViewPortfolioBtn">View Portfolio</button>
+            <button className="ViewPortfolioBtn" onClick={() => window.open('https://vukosimohlabini.me', '_blank')}>
+              View Portfolio
+            </button>
           </div>
         </div>
 

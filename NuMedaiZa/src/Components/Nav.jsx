@@ -12,7 +12,7 @@ const Nav = () => {
                 <img src={LogoImg} alt="NuMedia Logo" className='Logo' />
             </Link>
             <CentreNav />
-            <button className='EnquireBtn'>Enquire</button>
+            <button className='EnquireBtn' onClick={() => window.location.href = '/contact'}>Enquire</button>
         </div>
     </>
   )

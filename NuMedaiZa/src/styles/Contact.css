@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.contactPageContainer{
+    width: 100%;
+    min-height: 77.5vh;
+    background-image: url('../assets/wallpaperContact.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem 3rem;
+    box-sizing: border-box;
+        background: linear-gradient(90deg, 
+    rgba(11,31,58,0.92) 0%,   /* strong navy, left side */
+    rgba(11,31,58,0.75) 45%,  /* still fairly solid, mid */
+    rgba(11,31,58,0.25) 100%  /* mostly transparent, right side */);
+}
+
+.contactHeading{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', serif;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.textSection{
+    width: min(980px, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.textContact{
+    padding: 0;
+    margin: 0.2rem 0;
+    font-size: 0.95rem;
+}
+
+.formContainer{
+    width: min(980px, 100%);
+    margin-top: 2px;
+}
+
+.contactForm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 1.6rem;
+    align-items: stretch;
+}
+
+.inputColumn{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.messageColumn{
+    display: flex;
+}
+
+.formInput,
+.formMessage{
+    width: 100%;
+    background: #f2f2f2;
+    border: none;
+    border-radius: 4px;
+    color: #222;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 1rem 1.1rem;
+    box-sizing: border-box;
+}
+
+.formInput::placeholder,
+.formMessage::placeholder{
+    color: #c3c3c3;
+    letter-spacing: 0.02em;
+}
+
+.formInput{
+    height: 4.2rem;
+}
+
+.formMessage{
+    min-height: 14.6rem;
+    resize: vertical;
+}
+
+.sendButton{
+    grid-column: 1 / -1;
+    justify-self: center;
+    border: none;
+    background: #C9A961;
+    color: white;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    padding: 0.95rem 1.9rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.sendButton:hover{
+    background: #8f0f12;
+}
+
+@media (max-width: 900px){
+    .textSection{
+        width: min(680px, 100%);
+    }
+
+    .contactForm{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .formMessage{
+        min-height: 10rem;
+    }
+}
+
+@media (max-width: 560px){
+    .contactHeading{
+        font-size: 1.15rem;
+    }
+
+    .textContact{
+        font-size: 0.86rem;
+    }
+}
