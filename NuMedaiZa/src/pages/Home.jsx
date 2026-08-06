@@ -2,7 +2,7 @@ import { Link } from 'react-router'
 import '../styles/home.css'
 import NuMediaStockPhoto from '../assets/NuMediaStockPhoto.png'
 import upperCaseV from '../assets/letter-uppercase-square-v-svgrepo-com.svg'
-import Accordian from '../components/AccordianWWD'
+import Accordian from '../Components/AccordianWWD'
 
 const Home = () => {
 
