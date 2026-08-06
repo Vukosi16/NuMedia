@@ -1,5 +1,7 @@
+import { Link } from 'react-router'
 import '../styles/home.css'
 import NuMediaStockPhoto from '../assets/NuMediaStockPhoto.png'
+import upperCaseV from '../assets/letter-uppercase-square-v-svgrepo-com.svg'
 import Accordian from '../components/AccordianWWD'
 
 const Home = () => {
@@ -18,7 +20,7 @@ const Home = () => {
           <h1 className="heroHeading">Create an Online Presence</h1>
           <p className="heroText">We design, build, and grow websites that turn visitors into clients without the generic template feel. </p>
           <div className="heroButtonsContainer">
-            <button className="getStartedBtn">Get Started</button>
+            <Link className="getStartedBtn" to="/contact">Get Started</Link>
             <button className="ViewPortfolioBtn" onClick={() => window.open('https://vukosimohlabini.me', '_blank')}>
               View Portfolio
             </button>
@@ -66,15 +68,43 @@ const Home = () => {
 
         <div className="about-rightSide">
           <div className="about-grid">
-            <div className="about-grid-item"></div>
-            <div className="about-grid-item"></div>
-            <div className="about-grid-item"></div>
-            <div className="about-grid-item"></div>
-            <div className="about-grid-item"></div>
-            <div className="about-grid-item"></div>
-            <div className="about-grid-item"></div>
-            <div className="about-grid-item"></div>
-            <div className="about-grid-item"></div>
+            <div className="about-grid-item about-grid-link-item">
+              <a
+                className="about-grid-link"
+                href="https://vukosimohlabini.me/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Visit Vukosi Mohlabini personal site"
+              >
+                <img src={upperCaseV} alt="Uppercase V icon" className="about-grid-icon" />
+                <span className="about-grid-link-label">Vukosi mohlabini personal site</span>
+                
+              </a>
+            </div>
+            <div className="about-grid-item">
+              <span className="about-grid-link-coming-soon">coming soon</span>
+            </div>
+            <div className="about-grid-item">
+              <span className="about-grid-link-coming-soon">coming soon</span>
+            </div>
+            <div className="about-grid-item">
+              <span className="about-grid-link-coming-soon">coming soon</span>
+            </div>
+            <div className="about-grid-item">
+              <span className="about-grid-link-coming-soon">coming soon</span>
+            </div>
+            <div className="about-grid-item">
+              <span className="about-grid-link-coming-soon">coming soon</span>
+            </div>
+            <div className="about-grid-item">
+              <span className="about-grid-link-coming-soon">coming soon</span>
+            </div>
+            <div className="about-grid-item">
+              <span className="about-grid-link-coming-soon">coming soon</span>
+            </div>
+            <div className="about-grid-item">
+              <span className="about-grid-link-coming-soon">coming soon</span>
+            </div>
           </div>
         </div>
         

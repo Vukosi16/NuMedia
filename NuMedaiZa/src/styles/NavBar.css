@@ -19,7 +19,7 @@ body{
 }
 
 .logo{
-    height: 80%;
+    height: 100%;
     width: auto;
     object-fit: contain;
     margin-top: 36px;
@@ -87,8 +87,16 @@ h1{
     padding: 14px;
 }
 
+.logoContainer{
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+}
+
 .Logo{
-    height: 60%;
+    height: 100%;
     width: auto;
     object-fit: contain;
 }

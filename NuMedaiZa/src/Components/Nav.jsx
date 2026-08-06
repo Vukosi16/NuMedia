@@ -3,16 +3,17 @@ import { Link } from 'react-router';
 import "../styles/NavBar.css";
 import CentreNav from './CentreNav';
 import LogoImg from "../assets/NuMedia-Logo.png";
+import logoSvg from "../assets/logoSvg.svg";
 
 const Nav = () => {
   return (
     <>
         <div className="NavBox">
-            <Link className='logo' to="/">
-                <img src={LogoImg} alt="NuMedia Logo" className='Logo' />
+            <Link className='logoContainer' to="/">
+                <img src={logoSvg} alt="NuMedia Logo" className='Logo' />
             </Link>
             <CentreNav />
-            <button className='EnquireBtn' onClick={() => window.location.href = '/contact'}>Enquire</button>
+            <Link className='EnquireBtn' to="/contact">Enquire</Link>
         </div>
     </>
   )

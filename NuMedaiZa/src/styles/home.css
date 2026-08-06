@@ -71,6 +71,18 @@ html{
     height: 100%;
     justify-content: center;
     align-items: center;
+  padding: 2rem;
+}
+
+.heroImage{
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+  max-height: 78vh;
+  object-fit: contain;
+  border-radius: 18px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+  transform: translateY(-6px);
 }
 
 .heroHeading{
@@ -113,6 +125,7 @@ html{
 }
 
 .getStartedBtn{
+    text-decoration: none;
     width: 40%;
     height: 80%;
     background-color: #C9A961;
@@ -123,6 +136,9 @@ html{
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .getStartedBtn:hover{
@@ -336,11 +352,82 @@ html{
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(201, 169, 97, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
 }
 
 .about-grid-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(201, 169, 97, 0.5);
+}
+
+.about-grid-link-item {
+  position: relative;
+  padding: 14px;
+}
+
+.about-grid-link {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.about-grid-link:focus-visible {
+  outline: 3px solid #C9A961;
+  outline-offset: 4px;
+}
+
+.about-grid-icon {
+  width: 72%;
+  height: 72%;
+  object-fit: contain;
+  display: block;
+}
+
+.about-grid-link-label {
+  position: static;
+  display: block;
+  width: 100%;
+  padding: 0 8px;
+  text-align: center;
+  color: #0B1F3A;
+  font-size: 0.68rem;
+  font-weight: 600;
+  line-height: 1.3;
+  opacity: 1;
+  transition: opacity 0.25s ease;
+}
+
+.about-grid-link:hover .about-grid-link-label,
+.about-grid-link:focus-visible .about-grid-link-label {
+  color: #C9A961;
+}
+
+.about-grid-link:hover .about-grid-icon,
+.about-grid-link:focus-visible .about-grid-icon {
+  opacity: 0.15;
+}
+
+.about-grid-link-coming-soon {
+  display: block;
+  width: 100%;
+  padding: 0 8px;
+  text-align: center;
+  align-self: center;
+  color: rgba(11, 31, 58, 0.62);
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 p{

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 import '../styles/OnlinePresence.css'
 
 const OnlinePresence = () => {
@@ -27,9 +28,9 @@ const OnlinePresence = () => {
               <h5 className="ctaHeading">
                 Create an online presence that works for your business.
               </h5>
-              <button className="cta" onClick={() => window.location.href = '/contact'}>
+              <Link className="cta" to="/contact">
                 Enquire Now
-              </button>
+              </Link>
             </div>
 
         </div>
