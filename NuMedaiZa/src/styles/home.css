@@ -447,3 +447,203 @@ p{
     padding-left: 15px;
     padding-right: 15px;
 }
+
+@media (min-width: 1440px) {
+  .Hero,
+  .whatWeDo,
+  .about {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .heroHeading {
+    font-size: 4.6em;
+  }
+
+  .about-grid {
+    width: 82%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .heroHeading {
+    font-size: 3.4em;
+  }
+
+  .headingTag,
+  .wwdHeading {
+    font-size: 1.45em;
+  }
+
+  .tagText,
+  .heroText {
+    font-size: 1.15em;
+  }
+
+  .about-heading {
+    font-size: 4.8em;
+  }
+
+  .about-grid {
+    width: 95%;
+  }
+}
+
+@media (max-width: 992px) {
+  .Hero,
+  .whatWeDo,
+  .about {
+    height: auto;
+    min-height: auto;
+    flex-direction: column;
+    padding: 3rem 1.25rem;
+  }
+
+  .heroHeadingContainer,
+  .heroImageContainer,
+  .wwdLeftSide,
+  .wwdRightSide,
+  .about-leftSide,
+  .about-rightSide {
+    width: 100%;
+    height: auto;
+  }
+
+  .heroHeadingContainer {
+    padding-left: 0;
+    padding-bottom: 1.5rem;
+  }
+
+  .heroImageContainer {
+    padding: 0;
+    margin-top: 1.5rem;
+  }
+
+  .heroImage {
+    width: 100%;
+    height: auto;
+    max-width: 720px;
+  }
+
+  .heroButtonsContainer {
+    height: auto;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+
+  .getStartedBtn,
+  .ViewPortfolioBtn {
+    width: min(280px, 48%);
+    min-height: 52px;
+  }
+
+  .wwdLeftSide {
+    margin-left: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .wwdRightSide {
+    padding-left: 0;
+  }
+
+  .about {
+    padding-bottom: 4rem;
+  }
+
+  .about-grid {
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto;
+    padding-top: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Hero,
+  .whatWeDo,
+  .about {
+    padding: 2.5rem 1rem;
+  }
+
+  .heroHeading {
+    font-size: 2.8em;
+    line-height: 1.1;
+    height: auto;
+  }
+
+  .headingTag,
+  .wwdHeading {
+    font-size: 1.2em;
+  }
+
+  .heroText,
+  .tagText,
+  p {
+    font-size: 1rem;
+  }
+
+  .heroButtonsContainer {
+    gap: 12px;
+  }
+
+  .getStartedBtn,
+  .ViewPortfolioBtn {
+    width: 100%;
+  }
+
+  .fancy-heading {
+    font-size: 2.4em;
+  }
+
+  .about-heading {
+    font-size: 3.6em;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-grid-item {
+    min-height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Hero,
+  .whatWeDo,
+  .about {
+    padding: 2rem 0.75rem;
+  }
+
+  .heroHeading {
+    font-size: 2.2em;
+  }
+
+  .heroText,
+  .tagText,
+  p {
+    font-size: 0.95rem;
+  }
+
+  .heroImage {
+    border-radius: 12px;
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
+  }
+
+  .fancy-heading {
+    font-size: 2em;
+  }
+
+  .about-heading {
+    font-size: 2.8em;
+  }
+
+  .about-grid-link-label {
+    font-size: 0.62rem;
+  }
+
+  .about-grid-link-coming-soon {
+    font-size: 0.52rem;
+  }
+}
