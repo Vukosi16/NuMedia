@@ -1,3 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.NavBox {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #C9A961;
+    border-bottom: 3px solid darkslategrey;
+}
+
+.NavInner {
+    max-width: 1600px;
+    margin: 0 auto;
+    min-height: 15vh;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+
+.Logo {
+    display: block;
+    height: 58px;
+    width: auto;
+    object-fit: contain;
+}
+
+.centreNavBox {
+    min-width: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    column-gap: 1.5rem;
+}
+
+.CentreNavLinks {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+    border-radius: 10px;
+    color: #000;
+    font-size: 1.05em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.CentreNavLinks:hover {
+    color: #fff;
+    background-color: #000;
+    transform: translateY(-1px);
+}
+
+.EnquireBtn {
+    justify-self: end;
+    min-width: 120px;
+    padding: 0.75rem 1.25rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.EnquireBtn:hover {
+    color: #000;
+    background-color: #fff;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 1100px) {
+    .NavInner {
+        min-height: auto;
+        padding: 1rem 1.25rem;
+        grid-template-columns: auto 1fr;
+        grid-template-areas:
+            "logo button"
+            "nav nav";
+        row-gap: 1rem;
+    }
+
+    .logoContainer {
+        grid-area: logo;
+    }
+
+    .centreNavBox {
+        grid-area: nav;
+        justify-content: flex-start;
+    }
+
+    .EnquireBtn {
+        grid-area: button;
+        justify-self: end;
+    }
+}
+
+@media (max-width: 700px) {
+    .NavInner {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "logo"
+            "nav"
+            "button";
+        justify-items: center;
+        text-align: center;
+    }
+
+    .centreNavBox {
+        justify-content: center;
+    }
+
+    .EnquireBtn {
+        justify-self: center;
+        width: min(240px, 100%);
+    }
+}
 body{
     margin: 0;
     padding: 0;
@@ -8,21 +147,158 @@ body{
     position: sticky;
     top: 0;
     z-index: 1000;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    height: 15vh;
-    border-bottom: 3px solid darkslategrey;
     background-color: #C9A961;
+    border-bottom: 3px solid darkslategrey;
 }
 
-.logo{
-    height: 100%;
+.NavInner{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    height: 15vh;
+    padding: 0 1.5rem;
+    max-width: 1600px;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.NavBox {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #C9A961;
+    border-bottom: 3px solid darkslategrey;
+}
+
+.NavInner {
+    max-width: 1600px;
+    margin: 0 auto;
+    min-height: 15vh;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+
+.Logo {
+    display: block;
+    height: 58px;
     width: auto;
     object-fit: contain;
-    margin-top: 36px;
+}
+
+.centreNavBox {
+    min-width: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem 1.5rem;
+}
+
+.CentreNavLinks {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+    border-radius: 10px;
+    color: #000;
+    font-size: 1.05em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.CentreNavLinks:hover {
+    color: #fff;
+    background-color: #000;
+    transform: translateY(-1px);
+}
+
+.EnquireBtn {
+    justify-self: end;
+    min-width: 120px;
+    padding: 0.75rem 1.25rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.EnquireBtn:hover {
+    color: #000;
+    background-color: #fff;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 1100px) {
+    .NavInner {
+        min-height: auto;
+        padding: 1rem 1.25rem;
+        grid-template-columns: auto 1fr;
+        grid-template-areas:
+            "logo button"
+            "nav nav";
+        row-gap: 1rem;
+    }
+
+    .logoContainer {
+        grid-area: logo;
+    }
+
+    .centreNavBox {
+        grid-area: nav;
+        justify-content: flex-start;
+    }
+
+    .EnquireBtn {
+        grid-area: button;
+        justify-self: end;
+    }
+}
+
+@media (max-width: 700px) {
+    .NavInner {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "logo"
+            "nav"
+            "button";
+        justify-items: center;
+        text-align: center;
+    }
+
+    .centreNavBox {
+        justify-content: center;
+    }
+
+    .EnquireBtn {
+        justify-self: center;
+        width: min(240px, 100%);
+    }
+}
 }
 
 h1{
@@ -30,39 +306,29 @@ h1{
     padding: 0;
     height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: center;
+        width: 100%;
+        min-width: 0;
     align-items: center;
-    color: #fff;
+        flex-wrap: wrap;
 }
 
-.centreNavBox{
-    width: 60%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    gap: 23px;
-    margin-left: 10%;
-    margin-right: 10%;
-}
+
 
 .CentreNavLinks{
     font-size: 1.2em;
+        padding: 0.4rem 0.6rem;
+        border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: black;
     text-decoration: none;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
 }
 
 .CentreNavLinks:hover{
-    color: white;
-    background-color: black;
+        justify-self: end;
+        min-width: 120px;
+        padding: 0.75rem 1.25rem;
     border-radius: 10px;
     padding: 14px;
 }
@@ -77,28 +343,7 @@ h1{
     text-decoration: none;
     cursor: pointer;
     transition: 0.3s ease-in-out;
-    border-radius: 10px;
     background-color: #000;
-}
-
-.EnquireBtn:hover{
-    color: black;
-    background-color: white;
-    padding: 14px;
-}
-
-.logoContainer{
-    height: 100%;
-    width: auto;
-    object-fit: contain;
-    margin: 0;
-    padding: 0;
-}
-
-.Logo{
-    height: 100%;
-    width: auto;
-    object-fit: contain;
 }
 
 
